@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100rem;
+}
+$salsaFont: salsa;
+// Brand Colors
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$greyColor: #E8E8E8;
+.navbar {
+    background-color: $blackColor;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    .navbar__logo {
+        width: 9rem;
+    }
+    .navbar__links {
+        display: none;
+    }
+    .navbar__burger {
+        margin-top: 1rem;
+    }
+}
+.fa-solid {
+    color: $whiteColor;
+    font-size: 4rem;
+}
