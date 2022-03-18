@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  height: 100rem;
-}
-
 .navbar {
   z-index: 9999;
   background-color: #000000;
@@ -53,6 +49,10 @@ body {
 .fa-solid {
   color: #ffffff;
   font-size: 4rem;
+}
+
+.imgtest {
+  width: 100%;
 }
 
 .bottomfooter {

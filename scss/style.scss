@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body {
-    height: 100rem;
-}
 $salsaFont: salsa;
 // Brand Colors
 $whiteColor: #ffffff;
@@ -55,6 +52,9 @@ $greyColor: #E8E8E8;
 .fa-solid {
     color: $whiteColor;
     font-size: 4rem;
+}
+.imgtest {
+    width: 100%;
 }
 .bottomfooter {
     background-color: $blackColor;
