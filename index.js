@@ -1,11 +1,14 @@
-const multiply = n1 => {
-    let myNum = n1;
-    function giveAnswer(){
-        return myNum * 5;
-    }
-    return giveAnswer
+const navElements = {
+    navMenu: document.querySelector('.navbarmenu'),
+    navIcon: document.querySelector('.fa-solid')
 }
 
-let multiplySeven = multiply(7);
+function toggleMenu(){
+    if(navElements.navMenu.classList.contains('navbarmenu__close')){
+        navElements.navMenu.classList.remove('navbarmenu__close')
+    } else if (!navElements.navMenu.classList.contains('navbarmenu__close')){
+        navElements.navMenu.classList.add('navbarmenu__close')
+    }
+}
 
-console.log(multiplySeven());
+navElements.navIcon.onclick = toggleMenu;
