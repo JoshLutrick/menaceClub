@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html body {
+  overflow-x: hidden;
+}
+
 .navbar {
   z-index: 9999;
   background-color: #000000;
@@ -53,6 +57,26 @@
 
 .imgtest {
   width: 100%;
+}
+
+.merchandise {
+  margin-top: -0.3rem;
+}
+.merchandise .merchandisegrid {
+  background-color: #000000;
+  display: grid;
+  gap: 1rem;
+  grid-template: 1fr/repeat(5, 1fr);
+  overflow-x: scroll;
+}
+.merchandise .merchandise__newarrivals {
+  padding: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: salsa;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .bottomfooter {

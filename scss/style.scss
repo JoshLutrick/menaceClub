@@ -2,11 +2,17 @@
     margin: 0;
     padding: 0;
 }
+html {
+    body {
+        overflow-x: hidden;
+    }
+}
 $salsaFont: salsa;
 // Brand Colors
 $whiteColor: #ffffff;
 $blackColor: #000000;
 $greyColor: #E8E8E8;
+// Navbar
 .navbar {
     z-index: 9999;
     background-color: $blackColor;
@@ -53,9 +59,31 @@ $greyColor: #E8E8E8;
     color: $whiteColor;
     font-size: 4rem;
 }
+// Introduction Image
 .imgtest {
-    width: 100%;
+    width: 100%
 }
+// Merchandise Section
+.merchandise {
+    margin-top: -0.3rem;
+    .merchandisegrid {
+        background-color: $blackColor;
+        display: grid;
+        gap: 1rem;
+        grid-template: 1fr / repeat(5, 1fr);
+        overflow-x: scroll;
+    }
+    .merchandise__newarrivals {
+        padding: 1rem;
+        background-color: $blackColor;
+        color: $whiteColor;
+        font-family: $salsaFont;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+// Bottom Footer
 .bottomfooter {
     background-color: $blackColor;
     .bottomfooter__copyright {
